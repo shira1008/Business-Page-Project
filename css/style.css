@@ -1,0 +1,28 @@
+/* cause of the navbar */
+body {
+  padding-top: 57px;
+}
+
+/* <!-- ========hero pic======== --> */
+.hero {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)),
+    url(../img/pexels-photo-111085.webp);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+  color: #198754;
+}
+
+a:hover {
+  color: #20c997;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}

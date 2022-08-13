@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact || business</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="js/fontawesome-all.min.js"></script>
+  </head>
+  <body>
+    <!-- navbar -->
+
+    <nav
+      class="navbar navbar-expand-lg bg-light navbar-light border-bottom fixed-top"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="index.html">Our Business</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="services.html">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="about.html"
+                >About</a
+              >
+            </li>
+
+            <li class="nav-item active">
+              <a class="nav-link active" aria-current="page" href="contact.html"
+                >Contact</a
+              >
+            </li>
+          </ul>
+          <div class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle link-secondary"
+              id="dropdownLanguage"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Language
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="dropdownLanguge">
+              <li><a class="dropdown-item" href="#">English</a></li>
+              <li><a class="dropdown-item" href="#">Hebrew</a></li>
+              <li><a class="dropdown-item" href="#">Arabic</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- end of navbar -->
+    <!-- ======contact - Adress======= -->
+    <div class="container my-3 my-sm-5">
+      <h1 class="text-center mb-sm-4 display-1">Contact</h1>
+      <div class="row">
+        <div class="col-12 col-md-6">
+          <h2>Adress:</h2>
+          <address>
+            <strong>Company Name</strong><br />
+            Street Name<br />
+            ZIP code and city<br />
+            <i class="fas fa-fw fa-phone"></i>
+            <a href="tel:+1234567890">(123) 456 - 789</a><br />
+            <i class="fas fa-fw fa-envelope"></i>
+            <a href="mailto:info@business.com"> info@business.com</a>
+          </address>
+        </div>
+        <!-- end and start the opening hours -->
+        <div class="col-12 col-md-6">
+          <h2>Opening hours</h2>
+          <p>
+            Saturday-friday: <span class="float-end">9am - 6pm</span><br />
+            Holidays: <span class="float-end">9am - 2pm</span><br />
+          </p>
+        </div>
+      </div>
+      <!-- start of Send message -->
+      <div class="row">
+        <div class="col-12 col-lg-6 mb-3">
+          <h2>Send a messege</h2>
+          <!-- שורה של מייל ושם משתמש -->
+          <form>
+            <div class="row">
+              <!-- single -->
+              <div class="col-12 col-sm-6">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Name</label>
+                  <div class="input-group">
+                    <span class="input-group-text"
+                      ><i class="fas fa-user"></i
+                    ></span>
+                    <input
+                      type="text"
+                      id="name"
+                      class="form-control"
+                      name="name"
+                      placeholder="name"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- end -->
+              <!-- single -->
+              <div class="col-12 col-sm-6">
+                <div class="mb-3">
+                  <label for="Email" class="form-label">Email</label>
+                  <div class="input-group">
+                    <span class="input-group-text"
+                      ><i class="fas fa-envelope"></i
+                    ></span>
+                    <input
+                      type="text"
+                      id="Email"
+                      class="form-control"
+                      name="Email"
+                      placeholder="Email"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- end -->
+            </div>
+            <!-- שורה של מחלקה וטלפון -->
+            <div class="row">
+              <!-- single -->
+              <div class="col-12 col-sm-6">
+                <div class="mb-3">
+                  <label for="Phone" class="form-label">Phone</label>
+                  <div class="input-group">
+                    <span class="input-group-text"
+                      ><i class="fas fa-phone"></i
+                    ></span>
+                    <input
+                      type="text"
+                      id="Phone"
+                      class="form-control"
+                      name="Phone"
+                      placeholder="Your number"
+                      required
+                    />
+                  </div>
+                </div>
+              </div>
+              <!-- end -->
+              <!-- single -->
+              <div class="col-12 col-sm-6">
+                <div class="mb-3">
+                  <label for="department" class="form-label">Department</label>
+                  <div class="input-group">
+                    <span class="input-group-text"
+                      ><i class="fas fa-home"></i
+                    ></span>
+                    <select
+                      name="department"
+                      id="department"
+                      class="form-select"
+                      aria-describedby="department-help-block"
+                      required
+                    >
+                      <option value="">Select here</option>
+                      <option value="business">business</option>
+                      <option value="sale">sale</option>
+                      <option value="support">support</option>
+                    </select>
+                  </div>
+                  <small id="department-help-block" class="form-text"
+                    >Please select the recipient of your message
+                  </small>
+                </div>
+              </div>
+              <!-- end -->
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form=label mb-1">Message:</label>
+              <div class="input-group">
+                <span class="input-group-text"
+                  ><i class="fas fa-pencil-alt"></i
+                ></span>
+                <textarea
+                  name="message"
+                  class="form-control"
+                  id="message"
+                  placeholder="Write your message here"
+                  rows="5"
+                  required
+                ></textarea>
+              </div>
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+            <button type="submit" class="btn btn-secondary">Reset</button>
+          </form>
+        </div>
+        <!-- end message -->
+        <!-- ============MAP============ -->
+
+        <div class="col-12 col-lg-6 mb-3">
+          <h2>Our location</h2>
+          <div class="ratio ratio-4x3">
+            <iframe
+              src="https://maps.google.com/maps?q=Tel%20aviv&t=&z=19&ie=UTF8&iwloc=&output=embed"
+              allowfullscreen
+              frameborder="0"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- end of adress -->
+    <!-- ============section-footer============ -->
+
+    <footer class="bg-light">
+      <div class="container py-3 py-sm-5">
+        <div class="row">
+          <!-- single col -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <h6>Quick links</h6>
+            <ul>
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+
+              <li>
+                <a href="Services.html">Services</a>
+              </li>
+
+              <li>
+                <a href="about.html">About</a>
+              </li>
+
+              <li>
+                <a href="Contact.html">Contact</a>
+              </li>
+            </ul>
+          </div>
+          <!-- end of single col -->
+
+          <!-- single col -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <h6>Information</h6>
+            <ul>
+              <li>
+                <a href="#0">Job Opportunties</a>
+              </li>
+
+              <li>
+                <a href="#0">Frequently Asked Queastions</a>
+              </li>
+
+              <li>
+                <a href="#0">Info</a>
+              </li>
+            </ul>
+          </div>
+          <!-- end of single col -->
+
+          <!-- single col -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <h6>Follow us</h6>
+            <ul>
+              <li>
+                <a href="#0">
+                  <i class="fab fa-fw fa-facebook" aria-hidden="true"></i
+                ></a>
+              </li>
+
+              <li>
+                <a href="#0">
+                  <i class="fab fa-fw fa-instagram" aria-hidden="true"></i
+                ></a>
+              </li>
+
+              <li>
+                <a href="#0">
+                  <i class="fab fa-fw fa-twitter" aria-hidden="true"></i
+                ></a>
+              </li>
+
+              <li>
+                <a href="#0">
+                  <i class="fab fa-fw fa-linkedin" aria-hidden="true"></i
+                ></a>
+              </li>
+
+              <li>
+                <a href="#0">
+                  <i class="fab fa-fw fa-google" aria-hidden="true"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+          <!-- end of single col -->
+          <div class="col-12 col-sm-6 col-lg-3">
+            <h6>Our location</h6>
+            <address>
+              <strong>Business</strong><br />
+              Adress, Country<br />
+              <i class="fas fa-w fa-phone" aria-hidden="true"> </i
+              ><span class="sr-only"> Telephone:</span>
+              <a href="tel:+12345678">(123) 456-789</a><br />
+
+              <i class="fas fa-w fa-envelope" aria-hidden="true"> </i
+              ><span class="sr-only"> Mail:</span>
+              <a href="mailto:info@business.com">info@business.com</a><br />
+            </address>
+          </div>
+        </div>
+        <div class="row">
+          <div
+            class="col-12 col-sm-6 col-lg-9 d-flex justify-content-center m-auto"
+          >
+            <ul class="list-inline">
+              <li class="list-inline-item">&copy; 2022 Business</li>
+              <li class="list-inline-item">All rights reserved.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- end of footer -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
